@@ -1,0 +1,17 @@
+sfTexture_destroy(rpg->all_ennemies->en_8->sprite_character.texture);
+sfTexture_destroy(rpg->player->fight_robot.texture); //segfault
+sfTexture_destroy(rpg->all_ennemies->en_2->sprite_character.texture);
+sfTexture_destroy(rpg->all_ennemies->en_3->sprite_character.texture);
+sfTexture_destroy(rpg->all_ennemies->en_4->sprite_character.texture);
+sfTexture_destroy(rpg->all_ennemies->en_5->sprite_character.texture); //munmap_chunk
+sfTexture_destroy(rpg->all_ennemies->en_6->sprite_character.texture);
+sfTexture_destroy(rpg->all_ennemies->en_7->sprite_character.texture);
+sfTexture_destroy(rpg->all_ennemies->en_8->sprite_character.texture);
+sfTexture_destroy(rpg->player->player_stat->sprite_character.texture); //free invalid pointer
+sfTexture_destroy(rpg->all_ennemies->boss->sprite_character.texture); //segfault on leaving fight and free invalid pointer on killing boss  -> mistery
+sfTexture_destroy(rpg->all_ennemies->en_1->sprite_character.texture); //free invalid pointer
+sfSprite_destroy(rpg->player->fight_robot.sprite); //free(): invalid next size (normal)
+sfSprite_destroy(rpg->all_npcs->npc_3->bubble_text.sprite); //double free
+sfSprite_destroy(rpg->all_npcs->npc_5->bubble_text.sprite); //double free
+sfSprite_destroy(rpg->all_npcs->npc_7->bubble_text.sprite); //double free
+sfSprite_destroy(rpg->all_npcs->traductor->bubble_text.sprite); //same
