@@ -1,0 +1,15 @@
+spaceship = gray
+xp = 25
+level = 6
+speed_space_map = 20
+hp = 2
+strength = 80
+defense = 80
+speed = 80
+dead = 1
+spare_point = 0
+check objet = yes
+objet 1 = yes
+objet 2 = yes
+objet 3 = yes
+objet 4 = yes
